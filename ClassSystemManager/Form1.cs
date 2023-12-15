@@ -25,32 +25,9 @@ namespace ClassSystemManager
             panel2.BackColor = Color.FromArgb(174, 201, 222);
             button1.BackColor= Color.FromArgb(224, 224, 224);
             button2.BackColor = Color.FromArgb(224, 224, 224);
-            flowLayoutPanel1.Visible = _display;
-            flowLayoutPanel2.Visible = _display;
+
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            chick_open_close(flowLayoutPanel1);
-        }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            chick_open_close(flowLayoutPanel2);
-        }
-
-        private void chick_open_close(Control control)
-        {
-            if (_display == false)
-            {
-                _display = true;
-                control.Visible = _display;
-            }
-            else
-            {
-                _display = false;
-                control.Visible = _display;
-            }
-        }
     }
 }
